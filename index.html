@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Сalculator</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <section class="section__desktop">
+            <div class="section__head">
+                <h3 class="head__title">
+                    You can use a calculator to calculate
+                </h3>
+            </div>
+            <!-- /.section__head -->
+            <div class="desktop">
+                <div class="desktop__number">
+                    <div class="number">
+                        <label for="one">Number:</label>
+                        <input
+                            type="number"
+                            id="one"
+                            name="user_number"
+                            placeholder="Enter the first number"
+                            required
+                        />
+                    </div>
+                    <div class="number">
+                        <label for="two">Number:</label>
+                        <input
+                            type="number"
+                            id="two"
+                            name="user_number"
+                            placeholder="Enter the second number"
+                            required
+                        />
+                    </div>
+                </div>
+                <!-- /.desktop__number -->
+                <select id="desktop__action" required>
+                    <option value="0">choose operator</option>
+                    <option value="1">*</option>
+                    <option value="2">/</option>
+                    <option value="3">-</option>
+                    <option value="4">+</option>
+                </select>
+                <p class="validate"></p>
+                <!-- /.desktop -->
+                <div class="dialog__count">
+                    <input id="button" type="submit" value="Сount" />
+                    <h4 class="result">0</h4>
+                </div>
+                <!-- /.dialog__count -->
+            </div>
+        </section>
+        <!-- </section__desktop> -->
+
+        <script src="main.js"></script>
+    </body>
+</html>
